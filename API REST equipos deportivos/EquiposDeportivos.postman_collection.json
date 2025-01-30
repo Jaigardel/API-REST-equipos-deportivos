@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "3623b060-8247-4d11-9f04-e9d06409b6a3",
+		"name": "EquiposDeportivos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41216976"
+	},
+	"item": [
+		{
+			"name": "Listado Completo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Servidor/Gestion_Actividades_deportivas/ejercicio/equipos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Servidor",
+						"Gestion_Actividades_deportivas",
+						"ejercicio",
+						"equipos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Servidor/Gestion_Actividades_deportivas/ejercicio/equipos.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Servidor",
+						"Gestion_Actividades_deportivas",
+						"ejercicio",
+						"equipos.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"nombre\": \"Nuevonombre\",\r\n    \"edad_minima\": 13,\r\n    \"deporte_id\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Servidor/Gestion_Actividades_deportivas/ejercicio/equipos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Servidor",
+						"Gestion_Actividades_deportivas",
+						"ejercicio",
+						"equipos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir Alumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"equipo_id\": 5,\r\n    \"alumno_id\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Servidor/Gestion_Actividades_deportivas/ejercicio/equipos_alumnos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Servidor",
+						"Gestion_Actividades_deportivas",
+						"ejercicio",
+						"equipos_alumnos.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
