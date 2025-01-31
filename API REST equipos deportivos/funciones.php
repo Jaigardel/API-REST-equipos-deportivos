@@ -1,9 +1,9 @@
 <?php
 	
 	// Definición de variables
-	$host = "172.26.104.210";
-	$user = "pepito01";
-	$password = "pepito01";
+	$host = "";
+	$user = "";
+	$password = "";
 	$bbdd = "dwes_tarde_gestion_actividades_deportivas";
 
 	$headerJSON = 'Content-Type: application/json';
